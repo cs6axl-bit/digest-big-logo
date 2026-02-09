@@ -10,7 +10,7 @@ after_initialize do
 
   module ::DigestBigLogo
     # ===== EDIT THIS =====
-    TARGET_HEIGHT_PX = 70
+    TARGET_HEIGHT_PX = 80
     # =====================
 
     def render_digest_header
@@ -18,7 +18,7 @@ after_initialize do
       return html if html.blank?
 
       h = TARGET_HEIGHT_PX.to_i
-      h = 70 if h <= 0
+      h = 80 if h <= 0
 
       out = html.dup
 
